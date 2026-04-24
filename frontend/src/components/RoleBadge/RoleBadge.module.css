@@ -1,0 +1,21 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(12px, 3.5vw, 14px);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.player {
+  background: var(--role-player);
+  color: #fff;
+}
+
+.caller {
+  background: var(--role-caller);
+  color: #fff;
+}

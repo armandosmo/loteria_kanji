@@ -1,0 +1,118 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 254, 247, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}
+
+.card {
+  background: var(--paper);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lift);
+  padding: 20px;
+  max-width: 340px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.header {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--ink);
+}
+
+.subheader {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+
+.miniBoard {
+  display: grid;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
+.miniCell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.valid {
+  border: 2px solid var(--success);
+}
+
+.invalid {
+  border: 2px solid var(--accent);
+}
+
+.unmarked {
+  border: 1px solid var(--border);
+}
+
+.indicator {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.indicatorValid {
+  background: #e8f5e9;
+  color: var(--success);
+}
+
+.indicatorInvalid {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.pagerBtn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: var(--paper-2);
+  color: var(--ink);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagerLabel {
+  font-size: 12px;
+  color: var(--ink-soft);
+}

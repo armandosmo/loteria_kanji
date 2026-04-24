@@ -1,0 +1,148 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 24px;
+  border-radius: 14px;
+  background: var(--cell-3);
+}
+
+.heroEmoji {
+  font-size: 48px;
+}
+
+.heroText {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  text-align: center;
+}
+
+.configCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 8px;
+  padding: 14px 16px;
+  background: var(--paper-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+[data-theme="dark"] .configCard {
+  background: var(--paper-3);
+}
+
+.reglaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reglaLabel {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+}
+
+.reglaValue {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.bilingualTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.jp { font-size: inherit; font-weight: inherit; color: var(--ink); line-height: 1.2; }
+.es { font-size: 10px; font-weight: 400; color: var(--ink-faint); letter-spacing: 0.03em; }
+
+.heroSub {
+  font-size: 11px;
+  color: var(--ink-faint);
+  text-align: center;
+}
+
+.gritonChip {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--role-caller);
+  background: transparent;
+  padding: 2px 0;
+}
+
+.players {
+  flex: 1;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+/* Splash */
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 100%;
+  background: var(--accent);
+  animation: splashFade 1.5s ease-out forwards;
+}
+
+.splashText {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+  animation: splashIn 0.4s ease-out;
+  line-height: 1;
+}
+
+.splashSub {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  animation: splashIn 0.4s ease-out;
+}
+
+@keyframes splashFade {
+  0%, 70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes splashIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,171 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.themeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--paper-2);
+  font-size: 13px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+  line-height: 1;
+  z-index: 10;
+}
+
+.themeBtn:active {
+  opacity: 0.7;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px 24px;
+}
+
+.heroEmoji {
+  font-size: 48px;
+}
+
+.heroTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* Content */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.statValue {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.statLabel {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--ink-faint);
+}
+
+/* Review */
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.reviewGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.reviewItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.reviewCell {
+  width: 52px;
+  height: 52px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--paper-2);
+  animation: infoFade 0.2s ease;
+}
+
+.infoKun {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+
+.infoOn {
+  font-size: 10px;
+  color: var(--ink-soft);
+}
+
+.infoMeaning {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
+@keyframes infoFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.actions button {
+  width: 100%;
+}

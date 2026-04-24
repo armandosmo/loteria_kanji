@@ -1,0 +1,144 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.offlineDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.deckRow {
+  flex-shrink: 0;
+  padding: 8px 12px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.boardArea {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* Tabla cuadrada que llena el espacio disponible.
+   56px TopBar + 56px boton + ~50px deck + 32px paddings ~= 194px reservados. */
+.board {
+  width: min(
+    calc(100vw - 24px),
+    calc(100dvh - 56px - 56px - 50px - 32px)
+  );
+  aspect-ratio: 1;
+  display: grid;
+  gap: clamp(3px, 1vw, 6px);
+}
+
+.lotteryWrap {
+  flex-shrink: 0;
+  padding: 0 12px 12px;
+}
+
+.lotteryWrap > button {
+  width: 100%;
+}
+
+.waiting {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  padding: 0 24px;
+}
+
+.waitingTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.bilingualTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+}
+.jp { font-size: inherit; font-weight: inherit; color: var(--ink); line-height: 1.2; }
+.es { font-size: 10px; font-weight: 400; color: var(--ink-faint); letter-spacing: 0.03em; }
+
+.waitingSub {
+  font-size: 13px;
+  color: var(--ink-faint);
+  line-height: 1.4;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 254, 247, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}
+
+.overlayCard {
+  background: var(--paper);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lift);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.overlayText {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Toast */
+.toast {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 200;
+  animation: toastIn 0.25s ease-out;
+  white-space: nowrap;
+}
+
+@keyframes toastIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}

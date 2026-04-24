@@ -1,0 +1,28 @@
+.container {
+  display: inline-flex;
+  background: var(--paper-2);
+  padding: 4px;
+  border-radius: 10px;
+  gap: 2px;
+}
+
+.option {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s, font-weight 0.15s;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.active {
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}

@@ -1,0 +1,76 @@
+.cell {
+  position: relative;
+  aspect-ratio: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.1s;
+  border: none;
+  padding: 4px;
+  outline: none;
+  overflow: hidden;
+}
+
+.cell:focus-visible {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.cell:active {
+  transform: scale(0.94);
+}
+
+.readOnly {
+  cursor: default;
+}
+
+.readOnly:active {
+  transform: none;
+}
+
+.kanji {
+  font-size: var(--fs-kanji-cell);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--cell-text);
+}
+
+.infoHint {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.color1 { background: var(--cell-1); }
+.color2 { background: var(--cell-2); }
+.color3 { background: var(--cell-3); }
+.color4 { background: var(--cell-4); }
+.color5 { background: var(--cell-5); }
+
+.marked {
+  background: var(--cell-marked-bg);
+  color: var(--cell-marked-ink);
+  animation: markPulse 0.3s ease;
+}
+
+.dot {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+@keyframes markPulse {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}

@@ -1,0 +1,100 @@
+:root {
+  --cell-1: #FFE066;
+  --cell-2: #FF8FA3;
+  --cell-3: #7DD3D8;
+  --cell-4: #A0E060;
+  --cell-5: #B794F4;
+
+  --cell-marked-bg: #B0B0A0;
+  --cell-marked-ink: #5A5A5A;
+
+  --ink: #1A1A1A;
+  --ink-soft: #4A4A4A;
+  --ink-faint: #8A8680;
+
+  --paper: #FFFEF7;
+  --paper-2: #F5F1E0;
+
+  --accent: #E91E63;
+  --accent-soft: #FFE0EC;
+
+  --role-player: #1976D2;
+  --role-caller: #F57C00;
+
+  --border: #E0DAC0;
+  --success: #5B8A4E;
+
+  --shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+  --shadow-lift: 0 4px 14px rgba(26, 26, 26, 0.12);
+
+  /* Tama\u00f1os de fuente fluidos */
+  --fs-kanji-cell:    clamp(24px, 8vw, 54px);
+  --fs-kanji-caller:  clamp(80px, 20vw, 130px);
+  --fs-kanji-history: clamp(24px, 6vw, 34px);
+  --fs-body:          clamp(12px, 3.5vw, 15px);
+  --fs-label:         clamp(9px, 2.5vw, 11px);
+  --fs-button:        clamp(13px, 3.8vw, 16px);
+
+  /* Padding fluido de pantalla */
+  --pad-screen: clamp(12px, 4vw, 24px);
+
+  /* Color de texto sobre celdas de color */
+  --cell-text: var(--ink);
+}
+
+[data-theme="dark"] {
+  --cell-1: #C49A0A;
+  --cell-2: #B03050;
+  --cell-3: #1A7A80;
+  --cell-4: #3A7818;
+  --cell-5: #5A3A9E;
+
+  --cell-marked-bg:  #4A4A3A;
+  --cell-marked-ink: #C8C8B8;
+
+  --ink:       #F2EFE6;
+  --ink-soft:  #C8C4B8;
+  --ink-faint: #96928A;
+
+  --paper:   #1C1A18;
+  --paper-2: #272420;
+  --paper-3: #322E2A;
+
+  --accent:      #E91E63;
+  --accent-soft: #4A0820;
+
+  --role-player: #4A9AE8;
+  --role-caller: #E89A30;
+
+  --border:  #48433C;
+  --success: #4A7A3E;
+
+  --shadow:      0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lift: 0 4px 14px rgba(0, 0, 0, 0.5);
+
+  /* En dark mode el kanji sobre celda necesita near-white */
+  --cell-text: #F0EDE4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a      { color: var(--ink); }
+button { color: inherit; }

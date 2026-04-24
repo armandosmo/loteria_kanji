@@ -1,0 +1,146 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.nameSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  background: var(--paper-2);
+  margin-bottom: 16px;
+}
+
+.nameLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--ink-faint);
+}
+
+.bilingualTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.jp { font-size: inherit; font-weight: inherit; color: var(--ink); line-height: 1.2; }
+.es { font-size: 10px; font-weight: 400; color: var(--ink-faint); letter-spacing: 0.03em; }
+
+.nameInput {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--ink);
+  outline: none;
+}
+
+.nameInput:focus {
+  border-color: var(--accent);
+}
+
+.searchBtn {
+  margin-top: 4px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  background: var(--paper);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.1s, box-shadow 0.15s;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.host {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.players {
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.empty,
+.searching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  gap: 4px;
+}
+
+.emptyTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.emptySub {
+  font-size: 13px;
+  color: var(--ink-faint);
+}
+
+.retryWrap {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.searching p {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.dots::after {
+  content: '';
+  animation: dotPulse 1.4s infinite steps(4);
+}
+
+@keyframes dotPulse {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
+}

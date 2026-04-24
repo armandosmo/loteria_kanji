@@ -1,0 +1,94 @@
+caracter,lectura_on,lectura_kun,significado_es
+一,イチ | イツ,ひと | ひと.つ,Uno
+二,ニ,ふた | ふた.つ,Dos
+三,サン,み | み.つ | みっ.つ,Tres
+四,シ,よ | よ.つ | よっ.つ | よん,Cuatro
+五,ゴ,いつ | いつ.つ,Cinco
+六,ロク,む | む.つ | むっ.つ | むい,Seis
+七,シチ,なな | なな.つ | なの,Siete
+八,ハチ,や | や.つ | やっ.つ | よう,Ocho
+九,キュウ | ク,ここの | ここの.つ,Nueve
+十,ジュウ | ジッ | ジュッ,とお | と,Diez
+百,ヒャク | ビャク,-,Cien
+千,セン,ち,Mil
+万,マン | バン,-,Diez mil
+円,エン,まる.い,Yen | Círculo | Redondo
+日,ニチ | ジツ,ひ | -び | -か,Día | Sol
+月,ゲツ | ガツ,つき,Mes | Luna
+火,カ,ひ | -び | ほ,Fuego
+水,スイ,みず | みず-,Agua
+木,モク | ボク,き | こ-,Árbol | Madera
+金,キン | コン | ゴン,かね | かな- | -がね,Oro | Dinero | Metal
+土,ド | ト,つち,Tierra | Suelo
+山,サン | セン,やま,Montaña
+川,セン,かわ,Río
+田,デン,た,Arrozal | Campo de arroz
+人,ジン | ニン,ひと | -り | -と,Persona | Ser humano
+子,シ | ス | ツ,こ | -こ,Niño | Chico
+女,ジョ | ニョ | ニョウ,おんな | め,Mujer | Femenino
+男,ダン | ナン,おとこ | お,Hombre | Varón
+父,フ,ちち,Padre
+母,ボ,はは | も,Madre
+先,セン,さき | ま.ず,Antes | Futuro | Previo
+生,セイ | ショウ,い.きる | う.む | なま | き,Vida | Nacer | Crudo
+学,ガク,まな.ぶ,Estudiar | Aprender | Ciencia
+校,コウ,-,Escuela | Colegio
+名,メイ | ミョウ,な,Nombre | Reputación
+本,ホン,もと,Libro | Origen | Raíz
+何,カ,なに | なん,Qué
+上,ジョウ | ショウ | シャン,うえ | あ.げる | かみ | のぼ.る,Arriba | Subir | Encima
+下,カ | ゲ,した | さ.げる | しも | くだ.る,Abajo | Bajar | Debajo
+中,チュウ,なか | うち | あた.る,Dentro | Medio | Centro
+外,ガイ | ゲ,そと | ほか | はず.れる,Fuera | Exterior | Otro
+右,ウ | ユウ,みぎ,Derecha
+左,サ,ひだり,Izquierda
+前,ゼン,まえ,Antes | Delante | Frente
+後,ゴ | コウ,あと | うし.ろ | のち | おく.れる,Después | Detrás | Tarde
+午,ゴ,うま,Mediodía
+時,ジ,とき | -どき,Tiempo | Hora
+分,ブン | フン | ブ,わ.ける | わ.かる,Minuto | Parte | Dividir
+半,ハン,なか.ば,Mitad | Semi-
+長,チョウ,なが.い | おさ,Largo | Líder | Jefe
+高,コウ,たか.い | たか | たか.まる,Alto | Caro
+小,ショウ,ちい.さい | こ- | お- | さ-,Pequeño
+大,ダイ | タイ,おお.きい | おお- | おお.いに,Grande | Gran
+多,タ,おお.い | まさ.に | まさ.る,Muchos | Mucho
+少,ショウ,すく.ない | すこ.し,Poco | Un poco
+入,ニュウ | ジュ,はい.る | い.れる,Entrar | Insertar | Introducir
+出,シュツ | スイ,で.る | だ.す | い.でる,Salir | Sacar | Emerger
+行,コウ | ギョウ | アン,い.く | ゆ.く | おこな.う,Ir | Realizar | Línea
+来,ライ | タイ,く.る | きた.る | きた.す | こ,Venir | Futuro | Próximo
+食,ショク | ジキ,た.べる | く.らう | は.む,Comer | Alimento | Comida
+飲,イン | オン,の.む | -のみ,Beber | Tragar
+見,ケン,み.る | み.える | み.せる,Ver | Mirar | Observar
+聞,ブン | モン,き.く | き.こえる,Oír | Escuchar | Preguntar
+読,ドク | トク | トウ,よ.む | -よ.み,Leer
+書,ショ,か.く | -が.き | -が.き,Escribir | Documento
+話,ワ,はな.す | はなし,Hablar | Conversación | Historia
+買,バイ,か.う,Comprar
+北,ホク,きた,Norte
+南,ナン | ナ,みなみ,Sur
+西,セイ | サイ | ス,にし,Oeste
+東,トウ,ひがし | あずま,Este
+国,コク,くに,País | Nación
+駅,エキ,-,Estación (tren)
+電,デン,-,Electricidad | Rayo
+車,シャ,くるま,Vehículo | Coche | Rueda
+魚,ギョ,さかな | うお | -ざかな,Pescado | Pez
+犬,ケン,いぬ | いぬ-,Perro
+天,テン,あめ | あま-,Cielo | Paraíso | Naturaleza
+雨,ウ,あめ | あま- | -さめ,Lluvia
+友,ユウ,とも,Amigo
+気,キ | ケ,いき,Espíritu | Energía | Aire | Humor
+休,キュウ,やす.む | やす.まる | やす.める,Descansar | Reposar | Vacaciones
+今,コン | キン,いま,Ahora | El presente
+年,ネン,とし,Año
+会,カイ | エ,あ.う | あ.つまる,Encontrar | Reunirse | Asociación
+社,シャ,やしろ,Empresa | Santuario | Sociedad
+店,テン,みせ | たな,Tienda | Comercio
+白,ハク | ビャク,しろ | しら- | しろ.い,Blanco
+赤,セキ | シャク,あか | あか.い | あか.らむ,Rojo
+青,セイ | ショウ,あお | あお.い | あお-,Azul | Verde
+黒,コク,くろ | くろ.ずむ | くろ.い,Negro
+道,ドウ | トウ,みち,Camino | Calle | Vía | Doctrina
+每,マイ,ごと | -ごと.に,Cada | Todos los...
